@@ -9,7 +9,7 @@
                     .wrap-content-header {
                         display: flex;
                         justify-content: space-between;
-                        padding: 10px;
+                        padding: 10px 20px;
                         align-items: center;
                         .header-logo {
                             a {
@@ -45,12 +45,17 @@
                                 width: 100%;
                                 border: 6px solid #fff;
                                 border-radius: 20px;
+                                max-height: 450px;
+                                &:hover {
+                                    transform: scale(1.02) translateY(0rem);
+                                    transition: all .3s ease-in-out;
+                                }
                             }
                         }
                     }
                     .features-box-item-two {
                         display: grid;
-                        grid-gap: 0px 10px;
+                        grid-gap: 10px 10px;
                         grid-template-columns: repeat(2, 1fr);
                         .item {
                             line-height: 0;
@@ -58,6 +63,10 @@
                                 width: 100%;
                                 border: 6px solid #fff;
                                 border-radius: 20px;
+                            }
+                            &:hover {
+                                transform: scale(1.05) translateY(0rem);
+                                transition: all .3s ease-in-out;
                             }
                         }
                     }
@@ -101,7 +110,12 @@
                                 &.item-color-04 {
                                     background-color: #e581d3;
                                 }
+                                &:hover {
+                                    transform: scale(1.05) translateY(0rem);
+                                    transition: all .3s ease-in-out;
+                                }
                             }
+
                         }
 
                         &.features-color-02 {
@@ -393,7 +407,7 @@
                         .features-box-item-two {
                             grid-template-columns: repeat(3, 1fr);
                             grid-column: 6/span 7;
-                            align-items: center;
+                            grid-gap: 0px 10px;
                         }
                     }
                 }

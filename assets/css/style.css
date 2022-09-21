@@ -1,3 +1,177 @@
+.main-content .sec-game {
+  padding: 20px;
+  display: grid;
+  grid-gap: 21px 10px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.main-content .sec-game .box-game-item {
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-content .sec-game .box-game-item .game-item a {
+  line-height: 0;
+}
+.main-content .sec-game .box-game-item .game-item a img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.main-content .sec-game .box-game-item .game-item:hover {
+  transform: scale(1.05) translateY(0rem);
+  transition: all 0.3s ease-in-out;
+}
+.main-content h3 {
+  width: 100%;
+  font-size: 32px;
+  font-family: "BalooBhaina-Regular";
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+.main-content .sec-game-list {
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+.main-content .sec-game-list a {
+  line-height: 0;
+}
+.main-content .sec-game-list a img {
+  max-width: 100%;
+}
+.main-content .sec-game-list a:hover {
+  transform: scale(1.05) translateY(0rem);
+  transition: all 0.3s ease-in-out;
+}
+.main-content .sec-game-desc {
+  background-color: #ff9800;
+  border-radius: 20px;
+  padding-top: 1px;
+}
+.main-content .sec-game-desc .text-desc {
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 25px;
+  border: 3px solid #fff;
+  margin: 39px;
+  border-radius: 30px;
+}
+.main-content .sec-game-desc h3 {
+  padding-top: 20px;
+  color: white;
+}
+.main-content .sec-game-desc .game-snapshots {
+  grid-gap: 10px 10px;
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  padding: 20px;
+}
+.main-content .sec-game-desc .game-snapshots img {
+  max-width: 100%;
+  border-radius: 11px;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.main-content .sec-game-desc .game-video {
+  padding: 20px;
+}
+.main-content .sec-game-desc .game-video .title-video {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: "BalooBhaina-Regular";
+}
+.main-content .sec-game-desc .game-video video {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.main-content .sec-game-desc .game-video .text-game {
+  text-align: center;
+  margin: 20px auto 0 auto;
+  max-width: 1003px;
+}
+
+@media (min-width: 1024px) {
+  .main-content .sec-game {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 21px 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main-content .sec-game .box-game-item {
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-content .sec-game .box-game-item .game-item a {
+    line-height: 0;
+  }
+  .main-content .sec-game .box-game-item .game-item a img {
+    max-width: 100%;
+  }
+  .main-content .sec-game .play-game-card {
+    max-width: 896px !important;
+    width: 896px;
+    height: 504px !important;
+  }
+  .main-content h3 {
+    width: 100%;
+    font-size: 32px;
+    font-family: "BalooBhaina-Regular";
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+  }
+  .main-content .sec-game-list {
+    grid-gap: 10px 37px;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .main-content .sec-game-list a img {
+    border-radius: 10px;
+  }
+  .main-content .sec-game-desc {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .main-content .sec-game-desc .text-desc {
+    max-width: 1020px;
+    margin: 39px auto 39px auto;
+  }
+  .main-content .sec-game-desc h3 {
+    padding-top: 20px;
+    color: white;
+  }
+  .main-content .sec-game-desc .game-snapshots {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    padding: 10px 0 0px 0;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  .main-content .sec-game-desc .game-snapshots img {
+    max-width: 100%;
+    border-radius: 11px;
+    border: 5px solid #fff;
+  }
+  .main-content .sec-game-desc .game-video {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  .main-content .sec-game-desc .game-video video {
+    width: 100%;
+  }
+  .main-content .sec-game-desc .game-video .text-game {
+    font-size: 12px;
+    color: #fff;
+    width: 600px;
+  }
+}
 .animsition .wrapper-container .site-header .header-inner {
   background: #48a8ff;
 }
@@ -8,7 +182,7 @@
 .animsition .wrapper-container .site-header .header-inner .container .wrap-content-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 20px;
   align-items: center;
 }
 .animsition .wrapper-container .site-header .header-inner .container .wrap-content-header .header-logo a img {
@@ -38,10 +212,15 @@
   width: 100%;
   border: 6px solid #fff;
   border-radius: 20px;
+  max-height: 450px;
+}
+.animsition .wrapper-container .main-content .container .sec-features .features-box-item-one .item img:hover {
+  transform: scale(1.02) translateY(0rem);
+  transition: all 0.3s ease-in-out;
 }
 .animsition .wrapper-container .main-content .container .sec-features .features-box-item-two {
   display: grid;
-  grid-gap: 0px 10px;
+  grid-gap: 10px 10px;
   grid-template-columns: repeat(2, 1fr);
 }
 .animsition .wrapper-container .main-content .container .sec-features .features-box-item-two .item {
@@ -51,6 +230,10 @@
   width: 100%;
   border: 6px solid #fff;
   border-radius: 20px;
+}
+.animsition .wrapper-container .main-content .container .sec-features .features-box-item-two .item:hover {
+  transform: scale(1.05) translateY(0rem);
+  transition: all 0.3s ease-in-out;
 }
 .animsition .wrapper-container .main-content .container-plus {
   max-width: 1260px;
@@ -94,6 +277,10 @@
 }
 .animsition .wrapper-container .main-content .container-plus .sec-padding-02 .sec-features-02 .features-box-item .item.item-color-04 {
   background-color: #e581d3;
+}
+.animsition .wrapper-container .main-content .container-plus .sec-padding-02 .sec-features-02 .features-box-item .item:hover {
+  transform: scale(1.05) translateY(0rem);
+  transition: all 0.3s ease-in-out;
 }
 .animsition .wrapper-container .main-content .container-plus .sec-padding-02 .sec-features-02.features-color-02 {
   background-color: #e77728;
@@ -356,7 +543,7 @@
   .animsition .wrapper-container .main-content .container .sec-features .features-box-item-two {
     grid-template-columns: repeat(3, 1fr);
     grid-column: 6/span 7;
-    align-items: center;
+    grid-gap: 0px 10px;
   }
   .animsition .wrapper-container .main-content .container-plus .sec-padding-02 .sec-features-02 .features-box-item {
     grid-gap: 10px 70px;

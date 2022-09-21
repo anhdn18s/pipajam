@@ -1,0 +1,186 @@
+.main-content {
+    .sec-game {
+        padding: 20px;
+        display: grid;
+        grid-gap: 21px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        .box-game-item {
+            display: grid;
+            grid-gap: 10px 10px;
+            grid-template-columns: repeat(2, 1fr);
+            .game-item {
+                a {
+                    line-height: 0;
+                    img {
+                        max-width: 100%;
+                        border-radius: 15px;
+                    }
+                }
+                &:hover {
+                    transform: scale(1.05) translateY(0rem);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    h3 {
+        width: 100%;
+        font-size: 32px;
+        font-family: "BalooBhaina-Regular";
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+    }
+    .sec-game-list {
+        display: grid;
+        grid-gap: 10px 10px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        a {
+            line-height: 0;
+            img {
+                max-width: 100%;
+            }
+            &:hover {
+                transform: scale(1.05) translateY(0rem);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+    .sec-game-desc {
+        background-color: #ff9800;
+        border-radius: 20px;
+        padding-top: 1px;
+        .text-desc {
+            font-size: 15px;
+            font-family: Arial;
+            font-weight: 400;
+            color: #ffffff;
+            padding: 25px;
+            border: 3px solid #fff;
+            margin: 39px;
+            border-radius: 30px;
+        }
+        h3 {
+            padding-top: 20px;
+            color: white;
+        }
+        .game-snapshots {
+            grid-gap: 10px 10px;
+            grid-template-columns: repeat(1, 1fr);
+            display: grid;
+            padding: 20px;
+            img {
+                max-width: 100%;
+                border-radius: 11px;
+                border: 5px solid #fff;
+                box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
+            }
+        }
+        .game-video {
+            padding: 20px;
+            .title-video {
+                text-align: center;
+                color: white;
+                font-size: 25px;
+                font-family: "BalooBhaina-Regular";
+            }
+            video {
+                display: flex;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+            .text-game {
+                text-align: center;
+                margin: 20px auto 0 auto;
+                max-width: 1003px;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .main-content {
+        .sec-game {
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-gap: 21px 20px;
+            grid-template-columns: repeat(3, 1fr);
+            .box-game-item {
+                display: grid;
+                grid-gap: 10px 10px;
+                grid-template-columns: repeat(1, 1fr);
+                .game-item {
+                    a {
+                        line-height: 0;
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            .play-game-card {
+                max-width: 896px !important;
+                width: 896px;
+                height: 504px !important;
+            }
+        }
+
+        h3 {
+            width: 100%;
+            font-size: 32px;
+            font-family: "BalooBhaina-Regular";
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;
+        }
+        .sec-game-list {
+            grid-gap: 10px 37px;
+            grid-template-columns: repeat(7, 1fr);
+            max-width: 1200px;
+            margin: 0 auto;
+            a {
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+        .sec-game-desc {
+            max-width: 1200px;
+            margin: 0 auto;
+            .text-desc {
+                max-width: 1020px;
+                margin: 39px auto 39px auto;
+            }
+            h3 {
+                padding-top: 20px;
+                color: white;
+            }
+            .game-snapshots {
+                grid-template-columns: repeat(3, 1fr);
+                display: grid;
+                padding: 10px 0 0px 0;
+                max-width: 1020px;
+                margin: 0 auto;
+                img {
+                    max-width: 100%;
+                    border-radius: 11px;
+                    border: 5px solid #fff;
+                }
+            }
+            .game-video {
+                max-width: 1020px;
+                margin: 0 auto;
+                video {
+                    width: 100%;
+                }
+                .text-game {
+                    font-size: 12px;
+                    color: #fff;
+
+                    width: 600px;
+                }
+            }
+        }
+    }
+}
